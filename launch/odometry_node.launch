@@ -1,0 +1,6 @@
+<launch>
+    <node pkg="rviz" type="rviz" name="rviz"/>
+    <node pkg="rqt_topic" type="rqt_topic" name="rqt_topic"/>
+    <node pkg="odometry" type="odometry_node" name="odometry_node" output="screen"/>
+    <node pkg="odometry" type="ekf_odom_pub_node" name="ekf_odom_pub_node" output="screen"/>
+</launch>
